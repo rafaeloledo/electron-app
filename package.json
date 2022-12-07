@@ -1,0 +1,13 @@
+{
+  "name": "electron_inicial",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Rafael Ledo",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^22.0.0"
+  }
+}
