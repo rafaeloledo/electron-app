@@ -8,11 +8,16 @@ function createWindows() {
     minWidth: 300,
     show: false
   })
-  appWindow.loadFile('index.html')
+  appWindow.loadFile('public/src/view/index.html')
 
   appWindow.once('ready-to-show', () => {
     appWindow.show()
   })
+
+  appWindow.menuBarVisible = false
 }
 
 app.on('ready', createWindows)
+app.on('window-all-closed', () => { 
+  app.quit()
+})
